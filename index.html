@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration and Login Form</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-white h-full w-full">
+    <div class="h-screen flex justify-center items-center">
+      <div
+        class="shadow-xl h-auto w-96 py-3 flex justify-center rounded-3xl bg-[#7E60BF] text-white"
+      >
+        <form class="flex flex-col" action="/register" method="post">
+          <h2 class="text-2xl font-bold">Registration Form</h2>
+          <br />
+          <label for="regUsername">Username:</label>
+          <input
+            class=" w-52 rounded-2xl px-5 text-black"
+            type="text"
+            id="regUsername"
+            name="regUsername"
+            required
+          />
+          <label for="regPassword">Password:</label>
+          <input
+            class="w-52 rounded-2xl px-5  text-black"
+            type="password"
+            id="regPassword"
+            name="regPassword"
+            required
+          />
+          <label for="regEmail">Email:</label>
+          <input
+            class="w-52 rounded-2xl px-5  text-black"
+            type="email"
+            id="regEmail"
+            name="regEmail"
+            required
+          />
+          <label for="regPhone">Phone Number:</label>
+<input
+  class="w-52 rounded-2xl px-5  text-black"
+  type="tel"
+  id="regPhone"
+  name="regPhone"
+  required
+  />
+  <label for="regAddress">Address:</label>
+  <textarea class="rounded-2xl px-5  text-black" name="regAddress" id="regAddress" required></textarea >
+
+  <form action="/action_page.php">
+    <label for="regAge">Age:</label>
+    
+    <input
+      class="w-52 rounded-2xl px-5  text-black"
+      type="text"
+      id="regAge"
+      name="regAge"
+      required
+      />
+      
+          
+          <div data-role="main" class="ui-content">
+            <form method="post" action="/action_page_post.php">
+              <fieldset data-role="controlgroup">
+              <legend> Gender</legend>
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="male" value="male" checked>
+                <label for="female">Female</label>
+                <input type="radio" name="gender" id="female" value="female">
+                <label for="others">Others</label>
+                <input type="radio" name="gender" id="Others" value="Others">
+              </fieldset>
+              <label for="birthday"> Appoinmen Date:</label><br>
+              <input class=" text-black rounded-xl w-52 px-5" type="date" id="birthday" name="birthday">    
+              <!-- dropdown       -->
+
+              <ul  class="list-none  text-white ">
+                <li class="hover:bg-green-400">Pilmonology
+                  <div class="block absolute">
+                    <ul>
+                      <li>home</li>
+                      <li>home</li>
+                      <li>home</li>
+                      <li>home</li>
+                      <li>home</li>
+                    </ul>
+
+                  </div>
+                </li>
+              
+              </ul>
+          <br />
+          <br />
+          <br />            
+          <button
+          class="rounded-full h- w-44 bg-[#b192b9] active:bg-[#4a2652] mx-"
+          type="submit"
+        >
+          Register
+        </button>
+          
+        </form>
+      </div>
+    </div>
+    
+    
+  </body>
+</html>
